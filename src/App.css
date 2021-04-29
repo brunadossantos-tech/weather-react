@@ -1,38 +1,128 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: Avenir;
+  margin: 0;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.currentCity {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+p {
+  text-align: center;
+}
+.container {
+  background: linear-gradient(
+    180.3deg,
+    rgb(214, 224, 255) 37.2%,
+    rgb(254, 168, 168) 137.3%
+  );
+  box-shadow: 0 5px 5px rgba(172, 169, 169, 0.2);
+  margin-top: 10px;
+  border-radius: 10px;
+  display: block;
+  height: 600px;
+  width: 525px;
+}
+.weather-wrapp {
+  border-radius: 10px;
+  height: 600px;
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+#search {
+  color: white;
+  position: relative;
+  left: -20px;
+  font-size: 20px;
+  top: -3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.description {
+  border-radius: 10px;
+  display: block;
+  width: 300px;
+  position: relative;
+  top: -50px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-right: 15px;
+  border: 1px solid rgb(87, 85, 85);
+  box-shadow: 0 5px 5px rgba(172, 169, 169, 0.2);
+  color: rgb(87, 85, 85);
+  font-weight: 400;
+}
+hr {
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.hour-forecast h3 {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+}
+
+.hour-forecast img {
+  display: block;
+  margin: 0 auto;
+  height: 58px;
+  width: 58px;
+}
+
+.maxmin {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  height: auto;
+  line-height: 15px;
+}
+.temperature {
+  font-size: 60px;
+}
+.sky {
+  position: relative;
+  top: -50px;
+  text-align: center;
+  left: -60px;
+}
+
+.currentTime {
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  position: relative;
+  color: #3d3c3c;
+  margin-top: 5px;
+}
+.simbol {
+  position: relative;
+  top: -15px;
+  font-size: 40px;
+}
+.units {
+  position: relative;
+  top: -25px;
+}
+.units .active {
+  color: black;
+  text-decoration: none;
 }
