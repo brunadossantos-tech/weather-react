@@ -1,8 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import "bootstrap/dist/css/bootstrap.min.css";
 import './index.css';
 import App from './App';
+
+export default function Index(){
+  return(
+    <div className="Index">
+      <div className="container">
+        <App defaultCity="Lisbon" />
+      </div>
+    </div>
+  );
+}
 
 ReactDOM.render(
   <React.StrictMode>

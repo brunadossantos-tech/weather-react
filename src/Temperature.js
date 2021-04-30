@@ -27,7 +27,7 @@ export default function Temperature(props){
             return(
                 <div className="TempConvert">
                 <span className="unitCelsius">
-                    <strong>{Math.round(props.tempFahrenheit)}</strong></span>
+                    <strong>{Math.round(tempFahrenheit)}</strong></span>
                     <span className="units">ºC{" "}| {" "}<a href="/" onClick={convertCelsius}>ºF</a></span>
             </div>
             );
