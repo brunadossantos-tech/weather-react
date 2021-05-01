@@ -4,10 +4,9 @@ import Temperature from "./Temperature";
 
 export default function Weather(props){
     return(
-        <div className="Weather">
+    <div className="Weather">
         <h2 className="currentCity">
             <strong>
-            <i className="fas fa-map-marker-alt"></i>
             <span className="city">
             {props.data.city}
             </span>
